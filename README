@@ -25,7 +25,7 @@ GET /campaign
 Description: Retrieves a list of all campaigns.
 Response:
 200 OK: Returns an array of campaign objects.
-3. Get Campaign by ID
+3. **Get Campaign by ID**
 GET /campaign/:id
 
 Description: Retrieves a specific campaign based on its ID.
@@ -35,37 +35,36 @@ Response:
 200 OK: Returns the campaign object.
 404 Not Found: If no campaign with the specified ID exists.
 Lead Endpoints
-4. Add New Lead
+4. **Add New Lead**
 POST /leads
 
 Description: Creates a new lead.
 Request Body:
-json
-Copy code
+
 {
-    "leadId": "001",
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "phone": "+1234567890",
+    
+    "name": "John ",
+    "email": "1@example.com",
+    "phone": "123456789",
     "source": "Website",
-    "assignedSalesperson": "Alice"
+    "assignedSalesperson": "chandu"
 }
 Response:
 201 Created: Returns the created lead object.
 Reporting Endpoints
-5. Generate PDF Report for Campaigns
+5. **Generate PDF Report for Campaigns**
 GET /reports/pdf_for_campaign
 
 Description: Generates a PDF report containing all campaign data.
 Response:
 200 OK: Returns a PDF file with campaign data.
-6. Generate PDF Report for Leads
+6. **Generate PDF Report for Leads**
 GET /reports/pdf_for_leads
 
 Description: Generates a PDF report containing all leads data.
 Response:
 200 OK: Returns a PDF file with leads data.
-7. Generate CSV Report for Campaigns
+7. **Generate CSV Report for Campaigns**
 GET /reports/csv
 
 Description: Generates a CSV file containing all campaign data.
