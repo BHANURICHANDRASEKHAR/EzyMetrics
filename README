@@ -1,7 +1,7 @@
 EzyMetrics API
 This API allows you to manage campaigns and leads for EzyMetrics, including functionalities for adding, retrieving, and generating reports in PDF and CSV formats.
 
-**Base URL**==>http://localhost:6000
+**Base URL**==>[https://ezymetrics.onrender.com]
 Endpoints
 Campaign Endpoints
 1. **Add New Campaign**
@@ -70,3 +70,5 @@ GET /reports/csv
 Description: Generates a CSV file containing all campaign data.
 Response:
 200 OK: Returns a CSV file with campaign data.
+
+**Important: If the amount of the campaign is greater than 10,000, I will send an alert email.**
